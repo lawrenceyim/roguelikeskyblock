@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Text.Json.Serialization;
 using FileSystem;
 
+namespace InputSystem;
+
+// Currently in development. Do not use
 public class InputMapping {
     # region Consts
 
@@ -121,4 +124,9 @@ public class InputBinding {
             _ => null
         };
     }
+}
+
+public enum InputType {
+    Mouse = 0,
+    Key = 1
 }
